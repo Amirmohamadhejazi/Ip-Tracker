@@ -1,0 +1,15 @@
+@font-face {
+    font-family: InterLight;
+    font-style: normal;
+     src: url('../FontStyle/Inter-Light.ttf');
+}
+@font-face {
+    font-family: InterBold;
+    font-style: normal;
+     src: url('../FontStyle/Inter-Bold.ttf');
+}
+@font-face {
+    font-family: InterRegular;
+    font-style: normal;
+     src: url('../FontStyle/Inter-Regular.ttf');
+}

@@ -1,0 +1,111 @@
+/* ******************************************** Global Style */
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* padding-top: 30px; */
+    /* background-color: #f3f8fb; */
+}
+
+.flex-center{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.cursor_pointer{
+    cursor: pointer;
+}
+.mt-60{
+    margin-top: 60px;
+}
+.mb-60{
+    margin-bottom: 60px;
+}
+
+.trn3{
+    transition: 0.3s;
+}
+
+p{
+    margin: 0;
+}
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: left;
+}
+.text-justify{
+    text-align: justify;
+}
+
+/* ******************************************** c + bg */
+
+.c_very_dark_gray{
+    color: hsl(0, 0%, 17%)
+}
+
+.bg_very_dark_gray{
+    background-color: hsl(0, 0%, 17%)!important;
+}
+.c_dark_gray{
+    color: hsl(0, 0%, 59%)
+}
+
+.bg_dark_gray{
+    background-color: hsl(0, 0%, 59%);
+}
+
+/* ******************************************** Font */
+.manualFontsize{
+    font-size:  15px
+}
+
+.manualFontsizeMini{
+    font-size:  13px
+}
+
+/* ************************************** input custom */
+.form-control::placeholder {
+    color: #a6b8ba !important;
+}
+
+.form-control{
+    color: hsl(0, 0%, 17%)!important;
+    background-color: #f3f8fb;
+    font-family: InterBold;
+    border-radius: 12px 0 0 12px!important;
+    height: 50px
+
+}
+.form-control:focus{
+    box-shadow: none !important;
+}
+#map { height: 26rem; }
+
+/* ************************************************ box */
+.btnSubmit{
+    width: 55px;
+    height: 50px;
+    border-radius: 0 12px 12px 0!important;
+
+}
+.iconArrow{
+    width: 18px;
+}
+
+.formbox{
+    width: 500px
+}
+.header{
+    background-image: url("../pic/pattern-bg-desktop.png");
+    width: 100%;
+    height: 250px;
+}
+/* ******************************************** Media */
+@media only screen and (max-width: 750px) {
+
+}

@@ -1,0 +1,14 @@
+@import url(font.css);
+body {
+    font-family: InterRegular !important;
+    margin: 0;
+}
+.InterLight{
+    font-family: InterLight !important;
+}
+.InterBold{
+    font-family: InterBold!important ;
+}
+.InterRegular{
+    font-family: InterRegular!important ;
+}
