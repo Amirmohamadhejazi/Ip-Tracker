@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head> <link href="./style/tailwind.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
         <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
         <link rel="stylesheet" href="style/font/css/font.css">
@@ -8,17 +8,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style/bootstrap.min.css">
         <link rel="stylesheet" href="./style/main.css">
+
         <title>Ip tracker</title>
     </head>
-    <body  >
+    <body>
         <div class="w-100 d-flex justify-content-center bg_White trn3">
-            <div class="w-100 d-flex flex-column">
-                <!-- <img src="./pic/icon-location.svg" alt=""> -->
-                <div class="header flex-center position-relative">
+            <div class="w-100 d-flex flex-column position-relative">
+                <div class="header flex-center">
                     <h3 class="text-white" style="position: absolute; top: 20%;">IP Address Tracker</h3>
                     <div class="formbox text-center">
                         <form class="d-flex flex-row mt-3">
-                            <input type="text" class="form-control" id="Input_Ip" placeholder="Enter Ip">
+                            <input type="text" class="form-control" id="Input_Ip" placeholder="Enter Ip" >
                             <button type="submit" class="btn bg_very_dark_gray btnSubmit flex-center" id="submitbtn">
                                 <div class="iconArrow">
                                     <img src="./pic/icon-arrow.svg" width="100%" height="100%" alt="iconArrow">
@@ -27,11 +27,10 @@
                         </form>
                     </div>
                 </div>
+                <div id="ItemsBoxDetailIp" class="box_Detail_ip d-flex justify-content-between"></div>
                 <div id="map"></div>
             </div>
-            
-            
-
+            <div class="notification-box  flex flex-col items-end justify-center fixed w-full z-50 p-3"></div>
         </div>
     </body>
     <script src="./js/jquery-3.3.1.slim.min.js"></script>
@@ -39,4 +38,5 @@
     <script src="./js/main.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/alert.js"></script>
 </html>

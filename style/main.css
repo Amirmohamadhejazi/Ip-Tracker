@@ -4,8 +4,6 @@ html, body{
     padding: 0;
 }
 body{
-    /* padding-top: 30px; */
-    /* background-color: #f3f8fb; */
 }
 
 .flex-center{
@@ -68,6 +66,13 @@ p{
     font-size:  13px
 }
 
+.Title_box_detail {
+    font-size: 18px;
+    font-weight: bolder;
+}
+.description_box_detail {
+    font-size: 21px;
+}
 /* ************************************** input custom */
 .form-control::placeholder {
     color: #a6b8ba !important;
@@ -78,13 +83,21 @@ p{
     background-color: #f3f8fb;
     font-family: InterBold;
     border-radius: 12px 0 0 12px!important;
-    height: 50px
-
+    height: 50px;
+    border: 0;
 }
 .form-control:focus{
     box-shadow: none !important;
 }
-#map { height: 26rem; }
+
+.errorInput{
+    box-shadow: 0px 0px 4px 3px rgba(200,156,143,0.8) !important;
+    -webkit-box-shadow: 0px 0px 4px 3px rgba(200,156,143,0.8) !important;
+    -moz-box-shadow: 0px 0px 4px 3px rgba(200,156,143,0.8) !important;
+}
+#map { height: 50rem;
+z-index: 1;
+}
 
 /* ************************************************ box */
 .btnSubmit{
@@ -103,9 +116,60 @@ p{
 .header{
     background-image: url("../pic/pattern-bg-desktop.png");
     width: 100%;
-    height: 250px;
+    height: 20rem;
+    /*position: relative;*/
+    position: sticky;
+    top: 0;
+}
+
+.box_Detail_ip{
+    padding: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 90%;
+    height: 10rem;
+    top: 21%;
+    box-shadow: 0 0 10px rgb(200 200 200 / 20%);
+    border-radius: 30px;
+    background-color: white;
+}
+.items_box_detail {
+    width: 25%;
+    height: 100%;
+}
+
+.notification-box{
+    z-index: 10;
+    width: auto;
+    right: 0;
 }
 /* ******************************************** Media */
 @media only screen and (max-width: 750px) {
+    .formbox{
+        margin: 0 20px 0 20px;
+    }
+    #map { height: 32rem; }
+    .header{padding-bottom: 4rem}
+    .box_Detail_ip{
+        padding: 20px;
+        flex-direction: column;
+        width: 80%;
+        height: 20rem;
+        top: 22%;
+    }
 
+    .items_box_detail {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 1100px) {
+    .notification-box {
+        right: auto;
+        top: 20%;
+    }
 }
