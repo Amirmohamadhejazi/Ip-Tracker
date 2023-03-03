@@ -66,7 +66,7 @@ $("form").submit((e) => {
 });
 
 async function getDetail(ip) {
-    let currentStr = `https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_SZilwp1HT23Q5YqPtTg9tjgu8a6SK${ip?`&ipAddress=${ip}` : ""}`
+    let currentStr = `https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_kZYL1fkdFWOhg6eq1lAip3FfYMsV2&ip${ip?`&ipAddress=${ip}` : ""}`
         try {
         const response = await fetch((currentStr), {
             method: "GET",
